@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0c17b6-39d2-41f3-974f-023f3baeccbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.appveyor.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artifacts/app-ibank-build-for-testers.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/TransferBankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,22 +144,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1322" height="141" key="GridCell.Tab.0.bottom" timestamp="1676562188194">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1676563067168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676562188194" />
-    <state width="1322" height="141" key="GridCell.Tab.0.center" timestamp="1676562188194">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1676563067168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676562188194" />
-    <state width="1322" height="141" key="GridCell.Tab.0.left" timestamp="1676562188194">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1676563067168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676562188194" />
-    <state width="1322" height="141" key="GridCell.Tab.0.right" timestamp="1676562188194">
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1676563067168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="141" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676562188194" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

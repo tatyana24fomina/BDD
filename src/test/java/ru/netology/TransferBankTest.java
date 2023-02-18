@@ -1,19 +1,20 @@
 package ru.netology;
 
-import lombok.val;
+import PageObjects.DashboardPage;
+import PageObjects.DataHelper;
+import PageObjects.LoginPage;
+import PageObjects.TransferPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class TransferBankTest {
-    String idFirstCard = "92df3f1c-a033-48e6-8390-206f6b1f56c0";
-    String idSecondCard = "0f3f5c2a-249e-4c3d-8287-09f7a039391d";
-    String numberFirstCard = "5559 0000 0000 0001";
-    String numberSecondCard = "5559 0000 0000 0002";
-    DashboardPage page = new DashboardPage();
+    DashboardPage dashboardPage = new DashboardPage();
+    LoginPage loginPage = new LoginPage();
+    DataHelper dataHelper = new DataHelper();
+    TransferPage transferPage = new TransferPage();
 
     @BeforeEach
     void setup() {
@@ -22,19 +23,18 @@ class TransferBankTest {
 
     @Test
     void shouldSuccessTransferSecondCardToFirstCard() {
-        login();
+        loginPage.validLogin(dataHelper.getValidLogin(), dataHelper.getValidPassword(),
+                dataHelper.getValidPushMessage());
 
-        int amount = 100;
-        int balanceFirstCard = page.getFirstCardBalance();
-        int balanceSecondCard = page.getSecondCardBalance();
+        var amount = 100;
+        var balanceFirstCard = dashboardPage.getFirstCardBalance();
+        var balanceSecondCard = dashboardPage.getSecondCardBalance();
 
-        $("[data-test-id='" + idFirstCard + "'] button").click();
-        $("[data-test-id='amount'] input").sendKeys(String.valueOf(amount));
-        $("[data-test-id='from'] input").sendKeys(numberSecondCard);
-        $("[data-test-id='action-transfer']").click();
+        dashboardPage.TransferTo(dataHelper.getIdFirstCard());
+        transferPage.TransferFrom(dataHelper.getNumberSecondCard(), String.valueOf(amount));
 
-        var actualBalanceFirstCard = page.getFirstCardBalance();
-        var actualBalanceSecondCard = page.getSecondCardBalance();
+        var actualBalanceFirstCard = dashboardPage.getFirstCardBalance();
+        var actualBalanceSecondCard = dashboardPage.getSecondCardBalance();
 
         Assertions.assertEquals(balanceFirstCard + amount, actualBalanceFirstCard);
         Assertions.assertEquals(balanceSecondCard - amount, actualBalanceSecondCard);
@@ -42,29 +42,20 @@ class TransferBankTest {
 
     @Test
     void shouldSuccessTransferFirstCardToSecondCard() {
-        login();
+        loginPage.validLogin(dataHelper.getValidLogin(), dataHelper.getValidPassword(),
+                dataHelper.getValidPushMessage());
 
         var amount = 100;
-        var balanceFirstCard = page.getFirstCardBalance();
-        var balanceSecondCard = page.getSecondCardBalance();
+        var balanceFirstCard = dashboardPage.getFirstCardBalance();
+        var balanceSecondCard = dashboardPage.getSecondCardBalance();
 
-        $("[data-test-id='" + idSecondCard + "'] button").click();
-        $("[data-test-id='amount'] input").sendKeys(String.valueOf(amount));
-        $("[data-test-id='from'] input").sendKeys(numberFirstCard);
-        $("[data-test-id='action-transfer']").click();
+        dashboardPage.TransferTo(dataHelper.getIdSecondCard());
+        transferPage.TransferFrom(dataHelper.getNumberFirstCard(), String.valueOf(amount));
 
-        var actualBalanceFirstCard = page.getFirstCardBalance();
-        var actualBalanceSecondCard = page.getSecondCardBalance();
+        var actualBalanceFirstCard = dashboardPage.getFirstCardBalance();
+        var actualBalanceSecondCard = dashboardPage.getSecondCardBalance();
 
         Assertions.assertEquals(balanceFirstCard - amount, actualBalanceFirstCard);
         Assertions.assertEquals(balanceSecondCard + amount, actualBalanceSecondCard);
-    }
-
-    void login() {
-        $("[data-test-id='login'] input").sendKeys("vasya");
-        $("[data-test-id='password'] input").sendKeys("qwerty123");
-        $("[data-test-id='action-login']").click();
-        $("[data-test-id='code'] input").sendKeys("12345");
-        $("[data-test-id='action-verify']").click();
     }
 }

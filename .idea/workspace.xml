@@ -3,9 +3,32 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0c17b6-39d2-41f3-974f-023f3baeccbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DataHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/TransferPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/TransferBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/TransferBankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +66,50 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Gradle.TransferBankTest.shouldSuccessTransferSecondCardToFirstCard">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.TransferBankTest">
+    <configuration name="Tests in 'BankBalanceTest_test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TransferBankTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.netology.TransferBankTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="TransferBankTest.shouldSuccessTransferFirstCardToSecond" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -107,10 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TransferBankTest" />
         <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferSecondCardToFirstCard" />
+        <item itemvalue="Gradle.Tests in 'BankBalanceTest_test'" />
         <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard" />
         <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferSecondCardToFirstCard" />
-        <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferFirstCardToSecond" />
       </list>
     </recent_temporary>
   </component>
@@ -144,22 +211,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1676563067168">
+    <state x="341" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1676744110113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
-    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1676563067168">
+    <state x="341" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676744110113" />
+    <state x="479" y="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1676744206605">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
-    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1676563067168">
+    <state x="479" y="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676744206605" />
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1676750720788">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
-    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1676563067168">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720788" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1676750720787">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676563067168" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720787" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1676750720787">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720787" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1676750720788">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720788" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,5 +246,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BankBalanceTest$Tests_in__BankBalanceTest_test_.ic" NAME="Tests in 'BankBalanceTest_test' Coverage Results" MODIFIED="1676743927329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

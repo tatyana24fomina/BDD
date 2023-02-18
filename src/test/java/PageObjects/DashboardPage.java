@@ -1,8 +1,8 @@
-package ru.netology;
+package PageObjects;
 
 import com.codeborne.selenide.ElementsCollection;
-import lombok.val;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class DashboardPage {
@@ -23,6 +23,10 @@ public class DashboardPage {
         return extractBalance(text);
     }
 
+    public void TransferTo(String idCard) {
+        $("[data-test-id='" + idCard + "'] button").click();
+    }
+
     private int extractBalance(String text) {
         var start = text.indexOf(balanceStart);
         var finish = text.indexOf(balanceFinish);
@@ -30,4 +34,6 @@ public class DashboardPage {
 
         return Integer.parseInt(value);
     }
+
+
 }

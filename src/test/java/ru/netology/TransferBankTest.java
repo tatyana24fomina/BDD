@@ -1,20 +1,17 @@
 package ru.netology;
 
-import PageObjects.DashboardPage;
-import PageObjects.DataHelper;
-import PageObjects.LoginPage;
-import PageObjects.TransferPage;
+import page.objects.DashboardPage;
+import data.DataHelper;
+import page.objects.LoginPage;
+import page.objects.TransferPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import page.objects.VerificationPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
 class TransferBankTest {
-    DashboardPage dashboardPage = new DashboardPage();
-    LoginPage loginPage = new LoginPage();
-    DataHelper dataHelper = new DataHelper();
-    TransferPage transferPage = new TransferPage();
 
     @BeforeEach
     void setup() {
@@ -23,15 +20,20 @@ class TransferBankTest {
 
     @Test
     void shouldSuccessTransferSecondCardToFirstCard() {
-        loginPage.validLogin(dataHelper.getValidLogin(), dataHelper.getValidPassword(),
-                dataHelper.getValidPushMessage());
+        LoginPage loginPage = new LoginPage();
+        loginPage.validLogin(DataHelper.getAuthInfo());
+        VerificationPage verificationPage = new VerificationPage();
+        verificationPage.validVerification(DataHelper.getVerificationCode());
 
         var amount = 100;
+        DashboardPage dashboardPage = new DashboardPage();
         var balanceFirstCard = dashboardPage.getFirstCardBalance();
         var balanceSecondCard = dashboardPage.getSecondCardBalance();
 
-        dashboardPage.TransferTo(dataHelper.getIdFirstCard());
-        transferPage.TransferFrom(dataHelper.getNumberSecondCard(), String.valueOf(amount));
+        dashboardPage.transferTo(DataHelper.getIdFirstCard());
+
+        TransferPage transferPage = new TransferPage();
+        transferPage.transferFrom(DataHelper.getNumberSecondCard(), String.valueOf(amount));
 
         var actualBalanceFirstCard = dashboardPage.getFirstCardBalance();
         var actualBalanceSecondCard = dashboardPage.getSecondCardBalance();
@@ -42,15 +44,20 @@ class TransferBankTest {
 
     @Test
     void shouldSuccessTransferFirstCardToSecondCard() {
-        loginPage.validLogin(dataHelper.getValidLogin(), dataHelper.getValidPassword(),
-                dataHelper.getValidPushMessage());
+        LoginPage loginPage = new LoginPage();
+        loginPage.validLogin(DataHelper.getAuthInfo());
+        VerificationPage verificationPage = new VerificationPage();
+        verificationPage.validVerification(DataHelper.getVerificationCode());
 
         var amount = 100;
+        DashboardPage dashboardPage = new DashboardPage();
         var balanceFirstCard = dashboardPage.getFirstCardBalance();
         var balanceSecondCard = dashboardPage.getSecondCardBalance();
 
-        dashboardPage.TransferTo(dataHelper.getIdSecondCard());
-        transferPage.TransferFrom(dataHelper.getNumberFirstCard(), String.valueOf(amount));
+        dashboardPage.transferTo(DataHelper.getIdSecondCard());
+
+        TransferPage transferPage = new TransferPage();
+        transferPage.transferFrom(DataHelper.getNumberFirstCard(), String.valueOf(amount));
 
         var actualBalanceFirstCard = dashboardPage.getFirstCardBalance();
         var actualBalanceSecondCard = dashboardPage.getSecondCardBalance();

@@ -23,11 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0c17b6-39d2-41f3-974f-023f3baeccbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DataHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/TransferPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/objects/VerificationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/DataHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/TransferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/TransferPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/TransferBankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/TransferBankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TransferBankTest">
+  <component name="RunManager" selected="Gradle.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard">
     <configuration name="Tests in 'BankBalanceTest_test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,20 +138,18 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;ru.netology.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.netology.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="TransferBankTest.shouldSuccessTransferSecondCardToFirstCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -173,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TransferBankTest" />
-        <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferSecondCardToFirstCard" />
-        <item itemvalue="Gradle.Tests in 'BankBalanceTest_test'" />
         <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard" />
         <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferSecondCardToFirstCard" />
+        <item itemvalue="Gradle.TransferBankTest" />
+        <item itemvalue="Gradle.Tests in 'BankBalanceTest_test'" />
+        <item itemvalue="Gradle.TransferBankTest.shouldSuccessTransferFirstCardToSecondCard" />
       </list>
     </recent_temporary>
   </component>
@@ -219,22 +219,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676744206605" />
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1676750720788">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1676918602061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720788" />
-    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1676750720787">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676918602061" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1676918602061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720787" />
-    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1676750720787">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676918602061" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1676918602061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720787" />
-    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1676750720788">
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676918602061" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1676918602061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676750720788" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1676918602061" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

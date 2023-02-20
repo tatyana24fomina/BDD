@@ -1,4 +1,4 @@
-package PageObjects;
+package page.objects;
 
 import com.codeborne.selenide.ElementsCollection;
 
@@ -23,7 +23,7 @@ public class DashboardPage {
         return extractBalance(text);
     }
 
-    public void TransferTo(String idCard) {
+    public void transferTo(String idCard) {
         $("[data-test-id='" + idCard + "'] button").click();
     }
 
